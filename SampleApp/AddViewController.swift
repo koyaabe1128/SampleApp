@@ -7,22 +7,32 @@
 
 import UIKit
 
+var tasks = [String]()
+
 class AddViewController: UIViewController {
     @IBOutlet weak var taskTextField: UITextField!
-    @IBOutlet weak var addButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // ビューの設定
         self.title = "すること"
-        
         taskTextField.frame.size.height = 40
-        // NSAttributedStringを使ったデザインの変更
         let String: [NSAttributedString.Key : Any] = [
             .font: UIFont.boldSystemFont(ofSize: 15)
         ]
         taskTextField.attributedPlaceholder = NSAttributedString(string: "タスク/メモを入力", attributes: String)
         
+    }
+    
+    // 追加するボタンの設定
+    @IBAction func addButton(_ sender: Any) {
+        guard taskTextField.text!.isEmpty else {
+            tasks.append(taskTextField.text!)
+            UserDefaults.standard.set(tasks, forKey: "TaskList")
+            self.navigationController?.popViewController(animated: true)
+            return
+        }
     }
     
     /*
