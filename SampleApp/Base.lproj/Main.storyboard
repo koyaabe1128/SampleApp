@@ -39,11 +39,51 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jcO-1A-Kj4"/>
+                    <navigationItem key="navigationItem" id="jcO-1A-Kj4">
+                        <barButtonItem key="rightBarButtonItem" title="追加" id="Kax-CU-yMM">
+                            <connections>
+                                <segue destination="SXJ-kg-gs3" kind="show" id="QV9-R2-Bwh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--追加画面-->
+        <scene sceneID="eoi-gG-fIn">
+            <objects>
+                <viewController id="SXJ-kg-gs3" customClass="AddViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdF-Ci-N2G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8C5-gQ-7d1">
+                                <rect key="frame" x="49" y="205" width="317" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAu-wW-tQz" customClass="CustomButton" customModule="SampleApp" customModuleProvider="target">
+                                <rect key="frame" x="176" y="298" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="追加する"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FMt-hc-pvG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="追加画面" id="ah6-i8-GZj"/>
+                    <connections>
+                        <outlet property="addButton" destination="dAu-wW-tQz" id="2DP-Xy-4LE"/>
+                        <outlet property="taskTextField" destination="8C5-gQ-7d1" id="oR2-rw-jmA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRW-F2-ysU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8115942028987" y="93.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JV9-Uk-Ryr">
@@ -61,7 +101,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZN-gn-ezZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+            <point key="canvasLocation" x="290" y="94"/>
         </scene>
     </scenes>
     <resources>

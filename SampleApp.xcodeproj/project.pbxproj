@@ -15,6 +15,7 @@
 		AB754A582715CF65008A76A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB754A562715CF65008A76A2 /* LaunchScreen.storyboard */; };
 		AB754A632715CF65008A76A2 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB754A622715CF65008A76A2 /* SampleAppTests.swift */; };
 		AB754A6E2715CF65008A76A2 /* SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB754A6D2715CF65008A76A2 /* SampleAppUITests.swift */; };
+		AB8D3B442716D5C40011B75E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D3B432716D5C40011B75E /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AB754A692715CF65008A76A2 /* SampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB754A6D2715CF65008A76A2 /* SampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITests.swift; sourceTree = "<group>"; };
 		AB754A6F2715CF65008A76A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8D3B432716D5C40011B75E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AB754A4D2715CF64008A76A2 /* SceneDelegate.swift */,
 				AB754A4F2715CF64008A76A2 /* ViewController.swift */,
 				AB754A512715CF64008A76A2 /* Main.storyboard */,
+				AB8D3B432716D5C40011B75E /* AddViewController.swift */,
 				AB754A542715CF65008A76A2 /* Assets.xcassets */,
 				AB754A562715CF65008A76A2 /* LaunchScreen.storyboard */,
 				AB754A592715CF65008A76A2 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				AB754A502715CF64008A76A2 /* ViewController.swift in Sources */,
 				AB754A4C2715CF64008A76A2 /* AppDelegate.swift in Sources */,
+				AB8D3B442716D5C40011B75E /* AddViewController.swift in Sources */,
 				AB754A4E2715CF64008A76A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
